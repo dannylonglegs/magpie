@@ -1,3 +1,5 @@
+@import "notosans-fontface/css/notosans-fontface.css";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -7,8 +9,7 @@ body {
   padding: 0;
   margin: 0;
   overflow-x: hidden;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: "Noto Sans", sans-serif;
 }
 
 nav {
@@ -61,6 +62,19 @@ nav {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 80px;
+}
+
+.testimonials {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 72px;
+}
+
+.about-dustin {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 36px;
+  border-radius: 500px;
 }
 
 section {

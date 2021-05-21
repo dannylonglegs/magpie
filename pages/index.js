@@ -2,7 +2,12 @@ import Head from "next/head";
 import Nav from "../components/nav";
 import Enroll from "../components/enroll";
 import Hero from "../components/hero";
-import Image from "next/image";
+import Week from "../components/week";
+import Testimonial from "../components/testimonial";
+import StudentStar1 from "../components/svg/studentstar1";
+import StudentStar2 from "../components/svg/studentstar2";
+import StudentStar3 from "../components/svg/studentstar3";
+import AboutDustin from "../components/svg/aboutdustin";
 
 export default function Home() {
   return (
@@ -54,66 +59,87 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className="bg-yellow">
-          <ol className="weeks-list px-marginDesktop w-full">
-            <li className="flex flex-row w-full bg-white rounded-full p-2">
-              <h2 className="pl-8 text-title font-bold">一 1</h2>
-              <p className="text-body">
-                <b className="font-bold">Aliquam erat volutpat. </b>
-                <br />
-                Donec id condimentum diam. Quisque finibus nisi eu elit
-                sollicitudin ornare.
-              </p>
-            </li>
-            <li className="">
-              <h2>一 1</h2>
-              <p className="">
-                <b>Aliquam erat volutpat. </b>
-                <br />
-                Donec id condimentum diam. Quisque finibus nisi eu elit
-                sollicitudin ornare.
-              </p>
-            </li>
-            <li className="">
-              <h2>一 1</h2>
-              <p className="">
-                <b>Aliquam erat volutpat. </b>
-                <br />
-                Donec id condimentum diam. Quisque finibus nisi eu elit
-                sollicitudin ornare.
-              </p>
-            </li>
-            <li className="">
-              <h2>一 1</h2>
-              <p className="">
-                <b>Aliquam erat volutpat. </b>
-                <br />
-                Donec id condimentum diam. Quisque finibus nisi eu elit
-                sollicitudin ornare.
-              </p>
-            </li>
-            <li className="">
-              <h2>一 1</h2>
-              <p className="">
-                <b>Aliquam erat volutpat. </b>
-                <br />
-                Donec id condimentum diam. Quisque finibus nisi eu elit
-                sollicitudin ornare.
-              </p>
-            </li>
-            <li className="">
-              <h2>一 1</h2>
-              <p className="">
-                <b>Aliquam erat volutpat. </b>
-                <br />
-                Donec id condimentum diam. Quisque finibus nisi eu elit
-                sollicitudin ornare.
-              </p>
-            </li>
+        <section className="bg-yellow px-marginDesktop">
+          <ol className="weeks-list  w-full">
+            <Week
+              number="一 1"
+              title="Speech Communication Process"
+              description=""
+              color="neonYellow"
+            />
+            <Week
+              number="二 2"
+              title="Effective Listening"
+              description=""
+              color="white"
+            />
+            <Week
+              number="三 3"
+              title="Preparing Speech"
+              description=""
+              color="neonYellow"
+            />
+            <Week
+              number="四 4"
+              title="Developing and Supporting Your Ideas"
+              description=""
+              color="white"
+            />
+            <Week
+              number="五 5"
+              title="Impromptu Speech"
+              description=""
+              color="neonYellow"
+            />
+            <Week
+              number="六 6"
+              title="Persuasive Speaking"
+              description=""
+              color="white"
+            />
           </ol>
         </section>
-        <section className="bg-green"></section>
-        <section className="bg-blueLight"></section>
+        <section className="bg-green px-marginDesktop">
+          <h1></h1>
+          <div className="testimonials">
+            <Testimonial
+              svg={<StudentStar1 />}
+              subtitle="流利度"
+              title="Chen"
+              description="“Dustin taught me it’s OK to make mistakes and it’s also OK to be a pimp!”"
+            />
+            <Testimonial
+              svg={<StudentStar2 />}
+              subtitle="置信度"
+              title="David"
+              description="“I am sad that Dustin is leaving because he always shares his ciggies with me”"
+            />
+            <Testimonial
+              svg={<StudentStar3 />}
+              subtitle="性格"
+              title="Emily"
+              description="“Dustin helped me get into Harvard and taught me hold my liquour!” "
+            />
+          </div>
+        </section>
+        <section className="bg-blueLight px-marginDesktop">
+          <div className="about-dustin bg-opacity-20 p-12 bg-blueDark">
+            <AboutDustin />
+            <div>
+              <h1 className="text-title font-bold">Dustin Chok</h1>
+              <p className="text-body pr-20">
+                Hi! I’m Teacher Dustin. My goal as an ESL teacher is more than
+                just helping you learn a new language; I wish to help you
+                discover new and interesting parts about yourself through
+                language. Fluency will help us foster self-confidence which will
+                allow us to interact creatively. My teaching method focuses on
+                creativity because, yes, learning should be fun and interesting,
+                but it can also help us discover the types of people we want to
+                be.
+              </p>
+            </div>
+          </div>
+        </section>
       </main>
 
       <footer></footer>

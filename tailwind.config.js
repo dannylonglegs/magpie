@@ -12,7 +12,9 @@ module.exports = {
       grey: "#D7D7D7",
       pink: "#FFCECE",
       yellow: "#FFF4CE",
+      neonYellow: "#FAFF00",
       blueLight: "#CEE2FF",
+      blueDark: "#0047FF",
       white: "#FFFFFF",
     },
     fontSize: {
