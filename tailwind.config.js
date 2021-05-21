@@ -13,6 +13,11 @@ module.exports = {
       pink: "#FFCECE",
       yellow: "#FFF4CE",
       blueLight: "#CEE2FF",
+      white: "#FFFFFF",
+    },
+    fontSize: {
+      body: "24px",
+      title: "36px",
     },
   },
   variants: {

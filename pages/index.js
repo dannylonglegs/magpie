@@ -16,8 +16,102 @@ export default function Home() {
       <Enroll />
       <main>
         <Hero />
-        <section className="bg-pink"></section>
-        <section className="bg-yellow"></section>
+        <section className="bg-pink px-marginDesktop">
+          <h1></h1>
+          <div class="foundations">
+            <div className="flex flex-col">
+              <hgroup>
+                <h3 className="text-title">流利度</h3>
+                <h2 className="text-title font-bold">Fluency</h2>
+              </hgroup>
+              <p className="text-body">
+                is the most important part of{" "}
+                <span className="font-bold">speaking</span> because it helps us
+                to communicate our ideas as naturally as possible.
+              </p>
+            </div>
+            <div className="flex flex-col">
+              <hgroup>
+                <h3 className="text-title">置信度</h3>
+                <h2 className="text-title font-bold">Self Confidence</h2>
+              </hgroup>
+              <p className="text-body">
+                is understanding that we trust our own judgment and abilities,
+                and that <span className="font-bold">we value ourselves.</span>{" "}
+                Self-confidence gives us permission to be ourselves!
+              </p>
+            </div>
+            <div className="flex flex-col">
+              <hgroup>
+                <h3 className="text-title">性格</h3>
+                <h2 className="text-title font-bold">Creativity</h2>
+              </hgroup>
+              <p className="text-body">
+                is the act of turning new and imaginative ideas into reality.
+                Creativity is at the <span className="font-bold">heart</span> of
+                Magpie English.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section className="bg-yellow">
+          <ol className="weeks-list px-marginDesktop w-full">
+            <li className="flex flex-row w-full bg-white rounded-full p-2">
+              <h2 className="pl-8 text-title font-bold">一 1</h2>
+              <p className="text-body">
+                <b className="font-bold">Aliquam erat volutpat. </b>
+                <br />
+                Donec id condimentum diam. Quisque finibus nisi eu elit
+                sollicitudin ornare.
+              </p>
+            </li>
+            <li className="">
+              <h2>一 1</h2>
+              <p className="">
+                <b>Aliquam erat volutpat. </b>
+                <br />
+                Donec id condimentum diam. Quisque finibus nisi eu elit
+                sollicitudin ornare.
+              </p>
+            </li>
+            <li className="">
+              <h2>一 1</h2>
+              <p className="">
+                <b>Aliquam erat volutpat. </b>
+                <br />
+                Donec id condimentum diam. Quisque finibus nisi eu elit
+                sollicitudin ornare.
+              </p>
+            </li>
+            <li className="">
+              <h2>一 1</h2>
+              <p className="">
+                <b>Aliquam erat volutpat. </b>
+                <br />
+                Donec id condimentum diam. Quisque finibus nisi eu elit
+                sollicitudin ornare.
+              </p>
+            </li>
+            <li className="">
+              <h2>一 1</h2>
+              <p className="">
+                <b>Aliquam erat volutpat. </b>
+                <br />
+                Donec id condimentum diam. Quisque finibus nisi eu elit
+                sollicitudin ornare.
+              </p>
+            </li>
+            <li className="">
+              <h2>一 1</h2>
+              <p className="">
+                <b>Aliquam erat volutpat. </b>
+                <br />
+                Donec id condimentum diam. Quisque finibus nisi eu elit
+                sollicitudin ornare.
+              </p>
+            </li>
+          </ol>
+        </section>
         <section className="bg-green"></section>
         <section className="bg-blueLight"></section>
       </main>

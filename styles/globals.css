@@ -52,6 +52,17 @@ nav {
     top: 388px;
 }
 
+.weeks-list li {
+  display: grid;
+  grid-template-columns: 1.1fr 4fr;
+}
+
+.foundations {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 80px;
+}
+
 section {
   min-height: 100vh;
 }
