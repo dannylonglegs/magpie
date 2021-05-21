@@ -5,7 +5,7 @@ import Rectangle from "../components/svg/rectangle";
 
 function Hero({}) {
   return (
-    <section className="bg-grey">
+    <section className="hero bg-grey overflow-hidden">
       <BigStar />
       <Polygon />
       <LongRectangle />

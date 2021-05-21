@@ -1,6 +1,7 @@
 const Rectangle = () => {
   return (
     <svg
+      className="big-rec absolute z-10"
       width="1194"
       height="1170"
       viewBox="0 0 1194 1170"
@@ -14,7 +15,7 @@ const Rectangle = () => {
         rx="339.5"
         transform="rotate(41.942 453.829 0)"
         fill="#0047FF"
-        fill-opacity="0.2"
+        fillOpacity="0.2"
       />
     </svg>
   );

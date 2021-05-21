@@ -1,6 +1,7 @@
 const LongRectangle = () => {
   return (
     <svg
+      className="long-rec absolute"
       width="1233"
       height="267"
       viewBox="0 0 1233 267"
@@ -14,7 +15,7 @@ const LongRectangle = () => {
         rx="36.5"
         transform="rotate(-9.03685 0 194.138)"
         fill="#FAFF00"
-        fill-opacity="0.2"
+        fillOpacity="0.2"
       />
     </svg>
   );

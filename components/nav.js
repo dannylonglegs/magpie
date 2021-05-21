@@ -1,6 +1,6 @@
 function Nav({}) {
   return (
-    <nav className="w-full pb-8 px-marginDesktop fixed left-0 bottom-0">
+    <nav className="w-full pb-8 px-marginDesktop fixed left-0 bottom-0 z-100">
       <button className="nav-button bg-grey">Welcome</button>
       <button className="nav-button bg-pink">Method</button>
       <button className="nav-button bg-yellow">Program</button>
