@@ -26,11 +26,17 @@ nav {
 .star-wrapper {
   width: 276px;
   height: 118px;
+  z-index: 100;
 }
 
 .star-wrapper h1 {
     top: 60%;
     left: 40%;
+    z-index: 101;
+}
+
+.opening-description {
+  z-index: 99;
 }
 
 .big-star {

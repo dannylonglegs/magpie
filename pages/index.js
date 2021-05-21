@@ -8,6 +8,9 @@ import StudentStar1 from "../components/svg/studentstar1";
 import StudentStar2 from "../components/svg/studentstar2";
 import StudentStar3 from "../components/svg/studentstar3";
 import AboutDustin from "../components/svg/aboutdustin";
+import Title2 from "../components/svg/title2";
+import Title3 from "../components/svg/Title3";
+import Title4 from "../components/svg/title4";
 
 export default function Home() {
   return (
@@ -21,9 +24,11 @@ export default function Home() {
       <Enroll />
       <main>
         <Hero />
-        <section id="method" className="bg-pink px-marginDesktop">
-          <h1></h1>
-          <div class="foundations">
+        <section id="method" className="bg-pink px-marginDesktop py-32">
+          <div className="flex flex-column justify-center">
+            <Title2 />
+          </div>
+          <div class="foundations bg-white rounded-full pt-12 pb-8 px-24 mt-24">
             <div className="flex flex-col">
               <hgroup>
                 <h3 className="text-title">流利度</h3>
@@ -59,8 +64,11 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section id="program" className="bg-yellow px-marginDesktop">
-          <ol className="weeks-list  w-full">
+        <section id="program" className="bg-yellow px-marginDesktop py-32">
+          <div className="flex flex-column justify-center">
+            <Title3 />
+          </div>
+          <ol className="weeks-list w-full mt-24">
             <Week
               number="一 1"
               title="Speech Communication Process"
@@ -99,9 +107,11 @@ export default function Home() {
             />
           </ol>
         </section>
-        <section id="why-magpie" className="bg-green px-marginDesktop">
-          <h1></h1>
-          <div className="testimonials">
+        <section id="why-magpie" className="bg-green px-marginDesktop py-32">
+          <div className="flex flex-column justify-center">
+            <Title4 />
+          </div>
+          <div className="testimonials mt-16">
             <Testimonial
               svg={<StudentStar1 />}
               subtitle="流利度"
@@ -131,14 +141,16 @@ export default function Home() {
             <div>
               <h1 className="text-title font-bold">Dustin Chok</h1>
               <p className="text-body pr-20">
-                Hi! I’m Teacher Dustin. My goal as an ESL teacher is more than
-                just helping you learn a new language; I wish to help you
-                discover new and interesting parts about yourself through
-                language. Fluency will help us foster self-confidence which will
-                allow us to interact creatively. My teaching method focuses on
-                creativity because, yes, learning should be fun and interesting,
-                but it can also help us discover the types of people we want to
-                be.
+                Hi! I’m Teacher Dustin. <br />
+                <br />
+                My goal as an ESL teacher is more than just helping you learn a
+                new language; I wish to help you discover new and interesting
+                parts about yourself through language. <br />
+                <br /> Fluency will help us foster self-confidence which will
+                allow us to interact creatively. <br />
+                <br /> My teaching method focuses on creativity because, yes,
+                learning should be fun and interesting, but it can also help us
+                discover the types of people we want to be.
               </p>
             </div>
           </div>
