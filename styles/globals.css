@@ -1,9 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html,
 body {
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.star-wrapper {
+  width: 276px;
+  height: 118px;
+}
+
+.star-wrapper h1 {
+    top: 60%;
+    left: 40%;
+}
+
+section {
+  min-height: 100vh;
+}
+
+.nav-button {
+  width: 225px;
+  height: 75px;
+  /* background-color: grey; */
+  border-radius: 75px;
+  margin: 0 auto;
 }
 
 a {
