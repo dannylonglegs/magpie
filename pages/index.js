@@ -21,7 +21,7 @@ export default function Home() {
       <Enroll />
       <main>
         <Hero />
-        <section className="bg-pink px-marginDesktop">
+        <section id="method" className="bg-pink px-marginDesktop">
           <h1></h1>
           <div class="foundations">
             <div className="flex flex-col">
@@ -59,7 +59,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className="bg-yellow px-marginDesktop">
+        <section id="program" className="bg-yellow px-marginDesktop">
           <ol className="weeks-list  w-full">
             <Week
               number="一 1"
@@ -99,7 +99,7 @@ export default function Home() {
             />
           </ol>
         </section>
-        <section className="bg-green px-marginDesktop">
+        <section id="why-magpie" className="bg-green px-marginDesktop">
           <h1></h1>
           <div className="testimonials">
             <Testimonial
@@ -122,7 +122,10 @@ export default function Home() {
             />
           </div>
         </section>
-        <section className="bg-blueLight px-marginDesktop">
+        <section
+          id="about-dustin"
+          className="bg-blueLight px-marginDesktop pt-16 pb-32"
+        >
           <div className="about-dustin bg-opacity-20 p-12 bg-blueDark">
             <AboutDustin />
             <div>
