@@ -1,6 +1,5 @@
 import Head from "next/head";
 import Nav from "../components/nav";
-import Enroll from "../components/enroll";
 import Hero from "../components/hero";
 import Week from "../components/week";
 import Testimonial from "../components/testimonial";
@@ -21,15 +20,15 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Nav />
-      <Enroll />
+
       <main>
         <Hero />
-        <section id="method" className="bg-pink px-marginDesktop py-32">
+        <section id="method" className="bg-pink px-8 py-16 lg:px-32 lg:py-32">
           <div className="flex flex-column justify-center">
             <Title2 />
           </div>
-          <div class="foundations bg-white rounded-full pt-12 pb-8 px-24 mt-24">
-            <div className="flex flex-col">
+          <div className="foundations flex flex-col bg-white rounded-full mt-16 px-8 py-28 lg:pt-12 lg:pb-8 lg:px-32">
+            <div className="flex flex-col text-center">
               <hgroup>
                 <h3 className="text-title">流利度</h3>
                 <h2 className="text-title font-bold">Fluency</h2>
@@ -40,7 +39,7 @@ export default function Home() {
                 to communicate our ideas as naturally as possible.
               </p>
             </div>
-            <div className="flex flex-col">
+            <div className="flex flex-col text-center pt-12 lg:pt-0">
               <hgroup>
                 <h3 className="text-title">置信度</h3>
                 <h2 className="text-title font-bold">Self Confidence</h2>
@@ -51,7 +50,7 @@ export default function Home() {
                 Self-confidence gives us permission to be ourselves!
               </p>
             </div>
-            <div className="flex flex-col">
+            <div className="flex flex-col text-center pt-12 lg:pt-0">
               <hgroup>
                 <h3 className="text-title">性格</h3>
                 <h2 className="text-title font-bold">Creativity</h2>
@@ -64,7 +63,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section id="program" className="bg-yellow px-marginDesktop py-32">
+        <section id="program" className="bg-yellow px-8 p-16 lg:px-32 lg:py-32">
           <div className="flex flex-column justify-center">
             <Title3 />
           </div>
@@ -107,7 +106,10 @@ export default function Home() {
             />
           </ol>
         </section>
-        <section id="why-magpie" className="bg-green px-marginDesktop py-32">
+        <section
+          id="why-magpie"
+          className="bg-green px-8 pt-16 pb-24 lg:px-32 lg:py-32"
+        >
           <div className="flex flex-column justify-center">
             <Title4 />
           </div>
@@ -134,13 +136,13 @@ export default function Home() {
         </section>
         <section
           id="about-dustin"
-          className="bg-blueLight px-marginDesktop pt-16 pb-32"
+          className="bg-blueLight px-8 py-16 lg:px-32 lg:pt-16 lg:pb-32"
         >
-          <div className="about-dustin bg-opacity-20 p-12 bg-blueDark">
+          <div className="about-dustin rounded-full text-center bg-opacity-20 p-6 pb-32 lg:p-12 bg-blueDark">
             <AboutDustin />
             <div>
-              <h1 className="text-title font-bold">Dustin Chok</h1>
-              <p className="text-body pr-20">
+              <h1 className="text-title font-bold pt-6 lg:pt-0">Dustin Chok</h1>
+              <p className="text-body lg:pr-20">
                 Hi! I’m Teacher Dustin. <br />
                 <br />
                 My goal as an ESL teacher is more than just helping you learn a

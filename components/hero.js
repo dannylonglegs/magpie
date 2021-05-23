@@ -9,13 +9,13 @@ function Hero({}) {
   return (
     <section
       id="welcome"
-      className="hero bg-grey overflow-hidden px-marginDesktop"
+      className="hero px-8 py-16 bg-grey overflow-hidden lg:px-32 lg:pb-32"
     >
-      <div className="flex flex-row justify-center items-center content-center mt-32 mb-16 z-50">
+      <div className="flex flex-col lg:flex-row lg:justify-center lg:items-center lg:content-center mb-16 z-50">
         <MagpieEnglish />
         <Magpie />
       </div>
-      <div className="opening-description relative bg-white rounded-full py-16 px-32 z-50">
+      <div className="opening-description relative bg-white rounded-full py-32 px-12 lg:py-16 lg:px-32 z-50">
         <p className="text-body">
           At Magpie English our mission is to give you the attention that you
           need in order to discover the language within you. Everybody has a
@@ -25,7 +25,6 @@ function Hero({}) {
         </p>
       </div>
       <BigStar />
-      {/* <Polygon /> */}
       <LongRectangle />
       <Rectangle />
     </section>

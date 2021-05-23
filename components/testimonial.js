@@ -1,6 +1,6 @@
 function Testimonial({ svg, subtitle, title, description }) {
   return (
-    <div>
+    <div className="flex flex-col justify-center items-center mt-16 text-center">
       {svg}
       <hgroup className="pt-8">
         <h3 className="text-title">{subtitle}</h3>

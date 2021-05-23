@@ -2,11 +2,11 @@ import Star from "./svg/star";
 
 function Enroll({}) {
   return (
-    <div className="star-wrapper fixed top-0 left-0 pt-6 pl-4">
-      <h1 className="absolute m-auto text-center font-bold underline">
+    <div className="star-wrapper flex flex-col justify-center items-center lg:block lg:fixed lg:top-0 lg:left-0 lg:pt-6 lg:pl-4">
+      <h1 className="absolute lg:m-auto lg:text-center lg:font-bold underline">
         Enroll Today!
       </h1>
-      <Star className="absolute" />
+      <Star className="lg:absolute" />
     </div>
   );
 }

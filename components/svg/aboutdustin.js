@@ -1,6 +1,7 @@
 const AboutDustin = () => {
   return (
     <svg
+      className="m-auto w-full h-auto"
       width="556"
       height="556"
       viewBox="0 0 556 556"

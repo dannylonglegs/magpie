@@ -4,6 +4,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
 html,
 body {
   padding: 0;
@@ -18,20 +22,20 @@ nav {
   z-index: 1000;
 }
 
+nav button {
+  z-index: 10001;
+}
+
 .hero {
   min-height: 900px;
-  height: 900px;
+  /* height: 900px; */
 }
 
 .star-wrapper {
-  width: 276px;
-  height: 118px;
   z-index: 100;
 }
 
 .star-wrapper h1 {
-    top: 60%;
-    left: 40%;
     z-index: 101;
 }
 
@@ -61,13 +65,30 @@ nav {
 
 .weeks-list li {
   display: grid;
-  grid-template-columns: 1.1fr 4fr;
+  grid-template-columns: 1fr 2fr;
+  /* margin: auto 0 */
 }
 
-.foundations {
+@media only screen and (min-width: 1000px) {
+  .nav-button {
+    margin: 0 auto;
+  }
+
+  .star-wrapper {
+  width: 276px;
+  height: 118px;
+  z-index: 100;
+}
+  .star-wrapper h1 {
+    top: 60%;
+    left: 40%;
+    z-index: 101;
+}
+
+  .foundations {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 80px;
+  grid-gap: 36px;
 }
 
 .testimonials {
@@ -75,24 +96,30 @@ nav {
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 72px;
 }
-
 .about-dustin {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 36px;
   border-radius: 500px;
 }
+.weeks-list li {
+  display: grid;
+  grid-template-columns: 1.1fr 4fr;
+}
+}
+
+
+
 
 section {
   min-height: 100vh;
 }
 
 .nav-button {
+  margin: 12px auto;
   width: 225px;
   height: 75px;
-  /* background-color: grey; */
   border-radius: 75px;
-  margin: 0 auto;
 }
 
 a {
