@@ -1,9 +1,10 @@
+import { useState } from "react";
 import Link from "next/link";
 import Enroll from "../components/enroll";
+import Menu from "./svg/menu";
 
 const links = (
   <>
-    <Enroll />
     <Link href="/#welcome">
       <button className="nav-button bg-grey font-bold underline">
         Welcome
@@ -31,16 +32,37 @@ const links = (
 );
 
 function Nav({}) {
-  return (
-    <nav
-      className={
-        "fixed flex flex-col bg-blueDark w-screen h-screen items-center py-8" +
-        " " +
-        "lg:flex lg:flex-row lg:w-full lg:pb-8 lg:px-32 lg:fixed lg:left-0 lg:bottom-0 lg:z-100"
-      }
+  const [menuClosed, setMenuClosed] = useState(true);
+  const menuHandler = () => {
+    menuClosed ? setMenuClosed(false) : setMenuClosed(true);
+  };
+  let mobileClasses =
+    "fixed flex flex-col bg-blueDark w-screen h-screen items-center py-16";
+
+  let menu = (
+    <div
+      className="menu-wrapper fixed top-6 right-6 lg:hidden"
+      onClick={menuHandler}
     >
-      {links}
-    </nav>
+      <Menu />
+    </div>
+  );
+  return (
+    <>
+      <Enroll />
+      {menu}
+      <nav
+        className={
+          (menuClosed ? "menu" : "menu-visible") +
+          " " +
+          mobileClasses +
+          " " +
+          "lg:bg-transparent lg:bg-opacity-0 lg:translate-x-0 lg:h-auto lg:w-auto lg:flex lg:flex-row lg:w-full lg:pb-8 lg:px-32 lg:fixed lg:left-0 lg:bottom-0 lg:z-100"
+        }
+      >
+        {links}
+      </nav>
+    </>
   );
 }
 

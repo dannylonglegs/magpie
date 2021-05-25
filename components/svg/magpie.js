@@ -1,7 +1,7 @@
 const Magpie = () => {
   return (
     <svg
-      className="z-50 w-full"
+      className="z-50 w-full h-auto"
       width="494"
       height="369"
       viewBox="0 0 494 369"

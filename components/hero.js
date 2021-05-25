@@ -11,7 +11,7 @@ function Hero({}) {
       id="welcome"
       className="hero px-8 py-16 bg-grey overflow-hidden lg:px-32 lg:pb-32"
     >
-      <div className="flex flex-col lg:flex-row lg:justify-center lg:items-center lg:content-center mb-16 z-50">
+      <div className="flex flex-col h-screen pt-12 lg:flex-row lg:justify-center lg:h-auto lg:items-center lg:content-center mb-16 z-50">
         <MagpieEnglish />
         <Magpie />
       </div>

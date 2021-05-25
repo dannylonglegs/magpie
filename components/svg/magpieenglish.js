@@ -1,7 +1,7 @@
 const MagpieEnglish = () => {
   return (
     <svg
-      className="z-50 w-full"
+      className="z-50 w-full h-auto"
       width="551"
       height="284"
       viewBox="0 0 551 284"

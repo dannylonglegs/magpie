@@ -1,7 +1,7 @@
 const LongRectangle = () => {
   return (
     <svg
-      className="long-rec absolute"
+      className="long-rec hidden lg:block lg:absolute"
       width="1233"
       height="267"
       viewBox="0 0 1233 267"

@@ -1,7 +1,7 @@
 const BigStar = () => {
   return (
     <svg
-      className="big-star absolute"
+      className="big-star hidden lg:block lg:absolute"
       width="990"
       height="906"
       viewBox="0 0 990 906"

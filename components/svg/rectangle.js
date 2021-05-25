@@ -1,7 +1,7 @@
 const Rectangle = () => {
   return (
     <svg
-      className="big-rec absolute z-10"
+      className="big-rec hidden lg:block lg:absolute z-10"
       width="1194"
       height="1170"
       viewBox="0 0 1194 1170"
