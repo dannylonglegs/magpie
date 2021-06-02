@@ -6,26 +6,38 @@ import Menu from "./svg/menu";
 const links = (
   <>
     <Link href="/#welcome">
-      <button className="nav-button bg-grey font-bold underline">
-        Welcome
+      <button className="nav-button bg-yellow font-bold underline w-full h-20 border">
+        Discover
       </button>
     </Link>
     <Link href="#method">
-      <button className="nav-button bg-pink font-bold underline">Method</button>
+      <button className="nav-button bg-blueDark text-white font-bold underline w-full h-20 border">
+        Learning
+      </button>
     </Link>
     <Link href="#program">
-      <button className="nav-button bg-yellow font-bold underline">
-        Program
+      <button className="nav-button bg-green font-bold underline w-full h-20 border">
+        Curriculum
       </button>
     </Link>
     <Link href="#why-magpie">
-      <button className="nav-button bg-green font-bold underline">
-        Why Magpie?
+      <button className="nav-button bg-red font-bold underline w-full h-20 border">
+        Students
       </button>
     </Link>
     <Link href="#about-dustin">
-      <button className="nav-button bg-blueLight font-bold underline">
+      <button className="nav-button bg-green font-bold underline w-full h-20 border">
         About Dustin
+      </button>
+    </Link>
+    <Link href="#contact">
+      <button className="nav-button bg-black text-white font-bold underline w-full h-20 border">
+        Contact
+      </button>
+    </Link>
+    <Link href="">
+      <button className="nav-button bg-white font-bold underline w-full h-20 border">
+        Enroll
       </button>
     </Link>
   </>
@@ -37,7 +49,7 @@ function Nav({}) {
     menuClosed ? setMenuClosed(false) : setMenuClosed(true);
   };
   let mobileClasses =
-    "fixed flex flex-col bg-blueDark w-screen h-screen items-center py-16";
+    "fixed grid grid-cols-1 gap-y-4 pl-6 pr-10 bg-blueDark w-screen h-screen items-center py-16";
 
   let menu = (
     <div
@@ -57,7 +69,7 @@ function Nav({}) {
           " " +
           mobileClasses +
           " " +
-          "lg:bg-transparent lg:bg-opacity-0 lg:translate-x-0 lg:h-auto lg:w-auto lg:flex lg:flex-row lg:w-full lg:pb-8 lg:px-32 lg:fixed lg:left-0 lg:bottom-0 lg:z-100"
+          "lg:bg-transparent lg:bg-opacity-0 lg:translate-x-0 lg:h-auto lg:w-auto lg:grid lg:grid-cols-7 lg:gap-x-6 lg:w-full lg:pb-8 lg:px-32 lg:fixed lg:left-0 lg:bottom-0 lg:z-100"
         }
       >
         {links}

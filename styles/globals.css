@@ -27,7 +27,7 @@ nav button {
 }
 
 .hero {
-  min-height: 900px;
+  /* min-height: 900px; */
   /* height: 900px; */
 }
 
@@ -63,22 +63,26 @@ nav button {
     top: 388px;
 }
 
+.big-arrow {
+  left: 120px;
+  top: 140px;
+}
+
 .weeks-list li {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  /* margin: auto 0 */
+  
 }
 
+.testimonial-description {
+  height: 350px;
+}
 
 section {
   min-height: 100vh;
 }
 
 .nav-button {
-  margin: 12px auto;
-  width: 225px;
-  height: 75px;
-  border-radius: 75px;
 }
 
 .menu-wrapper {
@@ -117,19 +121,17 @@ a {
   }
 
   .star-wrapper {
-  width: 276px;
-  height: 118px;
+    height: 269px;
   z-index: 100;
 }
   .star-wrapper h1 {
     z-index: 101;
 }
 
-  .foundations {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 36px;
-}
+  /* .foundation {
+    min-height: 350px;
+    max-height: 400px;
+} */
 
 .testimonials {
   display: grid;
@@ -144,7 +146,7 @@ a {
 }
 .weeks-list li {
   display: grid;
-  grid-template-columns: 1.1fr 4fr;
+  grid-template-columns: 1fr 8fr;
 }
 
 .menu-visible {
