@@ -36,11 +36,15 @@ nav button {
 }
 
 .star-wrapper h1 {
-    z-index: 101;
+  z-index: 101;
 }
 
 .opening-description {
-  z-index: 99;
+  z-index: 10;
+}
+
+.discover {
+  z-index: 60;
 }
 
 .big-star {

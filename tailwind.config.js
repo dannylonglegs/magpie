@@ -22,11 +22,13 @@ module.exports = {
       blueDark: "#3F59A8",
       white: "#FFFFFF",
       black: "#000000",
+      transparent: "transparent",
     },
     fontSize: {
       bodymobile: "18px",
       body: "24px",
       title: "36px",
+      title2: "48px",
       titlemobile: "24px",
     },
   },

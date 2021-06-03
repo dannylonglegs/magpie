@@ -38,7 +38,7 @@ export default function Home() {
           </div>
           <div className="mt-16 foundations grid grid-cols-1 gap-x-24 lg:grid-cols-3">
             <div>
-              <div className="h-80 mb-12 flex flex-row justify-center lg:mt-0">
+              <div className="h-72 mb-12 flex flex-row justify-center items-center lg:mt-0">
                 <Apple1 />
               </div>
               <div className="foundation p-6 bg-white shadow-boxBlack flex flex-col">
@@ -54,7 +54,7 @@ export default function Home() {
               </div>
             </div>
             <div>
-              <div className="h-80 my-12 flex flex-row justify-center lg:mt-0">
+              <div className="h-72 my-12 flex flex-row justify-center items-center lg:mt-0">
                 <Apple2 />
               </div>
               <div className="foundation p-6 bg-white shadow-boxBlack flex flex-col">
@@ -70,7 +70,7 @@ export default function Home() {
               </div>
             </div>
             <div>
-              <div className="h-80 my-12 flex flex-row justify-center lg:mt-0">
+              <div className="h-72 my-12 flex flex-row justify-center items-center lg:mt-0">
                 <Apple3 />
               </div>
               <div className="foundation p-6 bg-white shadow-boxBlack flex flex-col">
