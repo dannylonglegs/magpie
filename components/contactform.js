@@ -13,7 +13,7 @@ const ContactForm = () => {
       <p>
         <label className="">
           <input
-            className="text-title font-bold shadow-boxBlack w-full bg-red mb-8 h-16 px-6 py-4 placeholder-black"
+            className="text-bodymobile lg:text-title font-bold shadow-boxBlack w-full bg-red mb-8 h-16 px-4 lg:px-6 py-4 placeholder-black"
             type="text"
             name="name"
             placeholder="Your Name"
@@ -24,7 +24,7 @@ const ContactForm = () => {
       <p>
         <label className="">
           <input
-            className="text-title font-bold shadow-boxBlack w-full bg-green mb-8 h-16 px-6 py-4 placeholder-black"
+            className="text-bodymobile lg:text-title font-bold shadow-boxBlack w-full bg-green mb-8 h-16 px-4 lg:px-6 py-4 placeholder-black"
             type="email"
             name="email"
             placeholder="Your Contact Information"
@@ -35,7 +35,7 @@ const ContactForm = () => {
       <p>
         <label className=" ">
           <textarea
-            className="text-title font-bold shadow-boxBlack w-full bg-yellow h-64 px-6 py-4 placeholder-black"
+            className="text-bodymobile lg:text-title font-bold shadow-boxBlack w-full bg-yellow h-64 px-4 lg:px-6 py-4 placeholder-black"
             name="message"
             placeholder="When would you like to talk? Do you have any questions?"
             required

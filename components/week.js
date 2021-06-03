@@ -16,7 +16,7 @@ function Week({ number, title, description, color }) {
   }
 
   return (
-    <li className={" flex flex-row w-full p-2 mb-4"}>
+    <li className={" flex flex-col lg:flex-row w-full p-2 mb-4"}>
       <div
         className={
           bgcolor1 +
@@ -25,14 +25,20 @@ function Week({ number, title, description, color }) {
           " " +
           boxShadow2 +
           " " +
-          " text-title font-bold flex flex-col justify-center text-center"
+          " text-title font-bold flex flex-col justify-center text-center p-4 lg:p-0"
         }
       >
         <h2>{number}</h2>
       </div>
       <p
         className={
-          bgcolor2 + " " + text2 + " " + boxShadow1 + " " + "text-body p-2 pl-4"
+          bgcolor2 +
+          " " +
+          text2 +
+          " " +
+          boxShadow1 +
+          " " +
+          "text-body px-4 py-8 lg:p-2 lg:pl-4"
         }
       >
         <b className="font-bold">{title} </b>

@@ -1,7 +1,10 @@
+const { screens } = require("tailwindcss/defaultTheme");
+
 module.exports = {
   purge: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
   darkMode: false, // or 'media' or 'class'
   theme: {
+    screens: { moblg: "370px", ...screens, "4k": "3000px" },
     extend: {
       spacing: {
         marginDesktop: `122px`,

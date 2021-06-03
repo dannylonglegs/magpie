@@ -32,54 +32,51 @@ export default function Home() {
 
       <main>
         <Hero />
-        <section id="method" className="bg-blueDark p-16 lg:px-32 lg:py-32">
+        <section
+          id="method"
+          className="bg-blueDark px-8 p-16 lg:px-32 lg:py-32"
+        >
           <div className="flex flex-column justify-center">
             <Title2 />
           </div>
-          <div className="mt-16 foundations grid grid-cols-1 gap-x-24 lg:grid-cols-3">
+          <div className="mt-16 md:px-32 lg:px-0 foundations grid grid-cols-1 gap-x-24 lg:grid-cols-3">
             <div>
-              <div className="h-72 mb-12 flex flex-row justify-center items-center lg:mt-0">
+              <div className="h-72 mb-6 md:mb-12 flex flex-row justify-center items-center lg:mt-0">
                 <Apple1 />
               </div>
-              <div className="foundation p-6 bg-white shadow-boxBlack flex flex-col">
+              <div className="foundation text-center lg:text-left p-6 bg-white shadow-boxBlack flex flex-col">
                 <hgroup className="mb-4">
-                  <h2 className="text-titlemobile md:text-title font-bold">
-                    Fluency
-                  </h2>
+                  <h2 className="text-title font-bold">Fluency</h2>
                 </hgroup>
-                <p className="text-bodymobile md:text-body">
+                <p className="text-body">
                   Fluency is the most important part of speaking because it
                   helps us to communicate our ideas as naturally as possible.
                 </p>
               </div>
             </div>
             <div>
-              <div className="h-72 my-12 flex flex-row justify-center items-center lg:mt-0">
+              <div className="h-72 mb-6 md:mb-12 my-12 flex flex-row justify-center items-center lg:mt-0">
                 <Apple2 />
               </div>
-              <div className="foundation p-6 bg-white shadow-boxBlack flex flex-col">
+              <div className="foundation text-center lg:text-left p-6 bg-white shadow-boxBlack flex flex-col">
                 <hgroup className="mb-4">
-                  <h2 className="text-titlemobile md:text-title font-bold">
-                    Confidence
-                  </h2>
+                  <h2 className="text-title font-bold">Confidence</h2>
                 </hgroup>
-                <p className="text-bodymobile md:text-body">
+                <p className="text-body">
                   Confidence is trusting our judgment and abilities.
                   Self-confidence gives us permission to be ourselves!
                 </p>
               </div>
             </div>
             <div>
-              <div className="h-72 my-12 flex flex-row justify-center items-center lg:mt-0">
+              <div className="h-72 mb-6 md:mb-12 my-12 flex flex-row justify-center items-center lg:mt-0">
                 <Apple3 />
               </div>
-              <div className="foundation p-6 bg-white shadow-boxBlack flex flex-col">
+              <div className="foundation text-center lg:text-left p-6 bg-white shadow-boxBlack flex flex-col">
                 <hgroup className="mb-4">
-                  <h2 className="text-titlemobile md:text-title font-bold">
-                    Creativity
-                  </h2>
+                  <h2 className="text-title font-bold">Creativity</h2>
                 </hgroup>
-                <p className="text-bodymobile md:text-body">
+                <p className="text-body">
                   Creativity is the act of turning new and imaginative ideas
                   into reality. Creativity is at the heart of Magpie English.
                 </p>
@@ -92,8 +89,10 @@ export default function Home() {
             <Title3 />
           </div>
           <div className="flex flex-row ">
-            <Pencil1 />
-            <ol className="weeks-list pl-16 w-full mt-24">
+            <div className="hidden lg:block">
+              <Pencil1 />
+            </div>
+            <ol className="weeks-list md:px-24 lg:p-0 lg:pl-16 w-full mt-0 lg:mt-24">
               <Week
                 number="1"
                 title="Schedule for Success:"
@@ -140,7 +139,7 @@ export default function Home() {
           <div className="flex flex-column justify-center">
             <Title4 />
           </div>
-          <div className="mt-16 grid grid-cols-1 gap-x-24 lg:grid-cols-3">
+          <div className="mt-16 grid grid-cols-1 md:px-32 lg:px-0 lg:gap-x-24 lg:grid-cols-3">
             <Testimonial
               svg={<StudentStar1 />}
               subtitle=""
@@ -169,20 +168,20 @@ export default function Home() {
           <div className="flex flex-column justify-center">
             <Title5 />
           </div>
-          <div className="bg-white shadow-boxBlack grid grid-cols-3 gap-x-14 py-8 px-12 mt-24">
+          <div className="bg-white shadow-boxBlack lg:grid lg:grid-cols-3 gap-x-14 py-8 px-6 md:mx-32 lg:mx-0 lg:px-12 mt-8 md:mt-24">
             <div>
               <img src="/dustin.png" alt="Teacher Dustin" />
             </div>
-            <div className="col-span-2 grid grid-cols-3">
+            <div className="lg:col-span-2 lg:grid lg:grid-cols-3">
               <div className="mt-auto">
-                <p className="text-body font-bold ">
+                <p className="pt-6 lg:pt-0 text-body font-bold ">
                   Dustin Chok <br /> email@email.com <br /> +01234567891011
                 </p>
               </div>
-              <div className="col-span-2 -mt-32">
+              <div className="hidden lg:block lg:col-span-2 lg:-mt-32">
                 <PencilAndApple />
               </div>
-              <div className="col-span-3 pt-6 text-body">
+              <div className="lg:col-span-3 pt-6 text-bodymobile lg:text-body">
                 <p>
                   Hi! I’m Teacher Dustin. My goal as an ESL teacher is more than
                   just helping you learn a new language; I wish to help you
@@ -204,7 +203,7 @@ export default function Home() {
           <div className="flex flex-column justify-center">
             <Title6 />
           </div>
-          <div className="my-24">
+          <div className="my-24 md:mx-32 lg:mx-0">
             <ContactForm />
           </div>
         </section>

@@ -1,12 +1,10 @@
 const Discover = () => {
   return (
     <svg
-      width="488"
-      height="220"
       viewBox="0 0 488 220"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      className="discover z-60"
+      className="discover z-60 h-auto w-full"
     >
       <g clip-path="url(#clip0)">
         <path

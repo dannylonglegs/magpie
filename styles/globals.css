@@ -72,15 +72,9 @@ nav button {
   top: 140px;
 }
 
-.weeks-list li {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  
-}
 
-.testimonial-description {
-  height: 350px;
-}
+
+
 
 section {
   min-height: 100vh;
@@ -132,15 +126,19 @@ a {
     z-index: 101;
 }
 
-  /* .foundation {
-    min-height: 350px;
-    max-height: 400px;
-} */
+.weeks-list li {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  
+}
 
 .testimonials {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 72px;
+}
+.testimonial-description {
+  /* height: 350px; */
 }
 .about-dustin {
   display: grid;

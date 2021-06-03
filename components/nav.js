@@ -2,46 +2,7 @@ import { useState } from "react";
 import Link from "next/link";
 import Enroll from "../components/enroll";
 import Menu from "./svg/menu";
-
-const links = (
-  <>
-    <Link href="/#welcome">
-      <button className="nav-button bg-yellow font-bold underline w-full h-20 border">
-        Discover
-      </button>
-    </Link>
-    <Link href="#method">
-      <button className="nav-button bg-blueDark text-white font-bold underline w-full h-20 border">
-        Learning
-      </button>
-    </Link>
-    <Link href="#program">
-      <button className="nav-button bg-green font-bold underline w-full h-20 border">
-        Curriculum
-      </button>
-    </Link>
-    <Link href="#why-magpie">
-      <button className="nav-button bg-red font-bold underline w-full h-20 border">
-        Students
-      </button>
-    </Link>
-    <Link href="#about-dustin">
-      <button className="nav-button bg-green font-bold underline w-full h-20 border">
-        About Dustin
-      </button>
-    </Link>
-    <Link href="#contact">
-      <button className="nav-button bg-black text-white font-bold underline w-full h-20 border">
-        Contact
-      </button>
-    </Link>
-    <Link href="">
-      <button className="nav-button bg-white font-bold underline w-full h-20 border">
-        Enroll
-      </button>
-    </Link>
-  </>
-);
+import Close from "./svg/close";
 
 function Nav({}) {
   const [menuClosed, setMenuClosed] = useState(true);
@@ -49,20 +10,91 @@ function Nav({}) {
     menuClosed ? setMenuClosed(false) : setMenuClosed(true);
   };
   let mobileClasses =
-    "fixed grid grid-cols-1 gap-y-4 pl-6 pr-10 bg-blueDark w-screen h-screen items-center py-16";
+    "fixed grid grid-cols-1 gap-y-4 px-6 bg-blueDark w-screen h-screen items-center pt-20 pb-12";
 
   let menu = (
     <div
-      className="menu-wrapper fixed top-6 right-6 lg:hidden"
+      className="bg-yellow p-4 menu-wrapper fixed top-4 right-4 lg:hidden"
       onClick={menuHandler}
     >
       <Menu />
     </div>
   );
+
+  let close = (
+    <div
+      className="p-4 menu-wrapper fixed top-4 right-4 lg:hidden"
+      onClick={menuHandler}
+    >
+      <Close />
+    </div>
+  );
+
+  const links = (
+    <>
+      <Link href="/#welcome">
+        <button
+          onClick={menuHandler}
+          className="nav-button bg-yellow font-bold underline w-full h-full lg:h-20 border"
+        >
+          Discover
+        </button>
+      </Link>
+      <Link href="#method">
+        <button
+          onClick={menuHandler}
+          className="nav-button bg-blueDark text-white font-bold underline w-full h-full lg:h-20 border"
+        >
+          Learning
+        </button>
+      </Link>
+      <Link href="#program">
+        <button
+          onClick={menuHandler}
+          className="nav-button bg-green font-bold underline w-full h-full lg:h-20 border"
+        >
+          Curriculum
+        </button>
+      </Link>
+      <Link href="#why-magpie">
+        <button
+          onClick={menuHandler}
+          className="nav-button bg-red font-bold underline w-full h-full lg:h-20 border"
+        >
+          Students
+        </button>
+      </Link>
+      <Link href="#about-dustin">
+        <button
+          onClick={menuHandler}
+          className="nav-button bg-green font-bold underline w-full h-full lg:h-20 border"
+        >
+          About Dustin
+        </button>
+      </Link>
+      <Link href="#contact">
+        <button
+          onClick={menuHandler}
+          className="nav-button bg-black text-white font-bold underline w-full h-full lg:h-20 border"
+        >
+          Contact
+        </button>
+      </Link>
+      <Link href="">
+        <button
+          onClick={menuHandler}
+          className="nav-button bg-white font-bold underline w-full h-full lg:h-20 border"
+        >
+          Enroll
+        </button>
+      </Link>
+    </>
+  );
+
   return (
     <>
       <Enroll />
-      {menu}
+      {menuClosed ? menu : close}
       <nav
         className={
           (menuClosed ? "menu" : "menu-visible") +
