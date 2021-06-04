@@ -182,8 +182,14 @@ export default function Home() {
           id="about-dustin"
           className="bg-green px-8 py-16 lg:px-32 lg:pt-16 lg:pb-32"
         >
-          <div className="flex flex-column justify-center">
+          <div className="hidden md:flex md:flex-column md:justify-center">
             <Title5 />
+          </div>
+          <div className="flex flex-column justify-center md:hidden">
+            <img
+              src="/mobiletitle5.png"
+              alt="Magpie's Cores Of Language Learning"
+            />
           </div>
           <div className="bg-white shadow-boxBlack lg:grid lg:grid-cols-3 gap-x-14 py-8 px-6 md:mx-32 lg:mx-0 lg:px-12 mt-8 md:mt-24">
             <div className="flex flex-col justify-center">
