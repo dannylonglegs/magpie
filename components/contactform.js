@@ -27,7 +27,7 @@ const ContactForm = () => {
             className="text-bodymobile lg:text-title font-bold shadow-boxBlack w-full bg-green mb-8 h-16 px-4 lg:px-6 py-4 placeholder-black"
             type="email"
             name="email"
-            placeholder="Your Contact Information"
+            placeholder="Your Email"
             required
           />
         </label>
