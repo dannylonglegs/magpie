@@ -1,7 +1,7 @@
 function Testimonial({ svg, subtitle, title, description, opposite }) {
   return (
     <div className="flex flex-col justify-center lg:justify-start mt-16 ">
-      <div className="h-60 z-40 mx-auto -mb-12 moblg:-mb-2">{svg}</div>
+      <div className=" z-40 mx-auto -mb-12 lg:-mb-12">{svg}</div>
       <div
         className={
           "testimonial-description p-6 flex flex-col flex-1 justify-between z-10" +

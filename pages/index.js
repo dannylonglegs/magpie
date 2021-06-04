@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Image from "next/image";
 import Nav from "../components/nav";
 import Hero from "../components/hero";
 import Week from "../components/week";
@@ -7,7 +6,6 @@ import Testimonial from "../components/testimonial";
 import StudentStar1 from "../components/svg/studentstar1";
 import StudentStar2 from "../components/svg/studentstar2";
 import StudentStar3 from "../components/svg/studentstar3";
-import AboutDustin from "../components/svg/aboutdustin";
 import Title2 from "../components/svg/title2";
 import Title3 from "../components/svg/Title3";
 import Title4 from "../components/svg/title4";
@@ -19,6 +17,7 @@ import Pencil1 from "../components/svg/pencil1";
 import PencilAndApple from "../components/svg/pencilandapple";
 import Title6 from "../components/svg/title6";
 import ContactForm from "../components/contactform";
+import MobileTitle from "../components/svg/mobile/mobiletitle";
 
 export default function Home() {
   return (
@@ -36,15 +35,21 @@ export default function Home() {
           id="method"
           className="bg-blueDark px-8 p-16 lg:px-32 lg:py-32"
         >
-          <div className="flex flex-column justify-center">
+          <div className="hidden md:flex md:flex-column md:justify-center">
             <Title2 />
           </div>
-          <div className="mt-16 md:px-32 lg:px-0 foundations grid grid-cols-1 gap-x-24 lg:grid-cols-3">
-            <div>
-              <div className="h-72 mb-6 md:mb-12 flex flex-row justify-center items-center lg:mt-0">
+          <div className="flex flex-column justify-center md:hidden">
+            <img
+              src="/mobiletitle1.png"
+              alt="Magpie's Cores Of Language Learning"
+            />
+          </div>
+          <div className=" grid grid-cols-1 md:px-32 lg:px-0 lg:gap-x-24 lg:grid-cols-3">
+            <div className="flex flex-col justify-center lg:justify-start mt-16 ">
+              <div className="h-72 mb-6 md:mb-12 flex flex-row justify-center items-center lg:mt-0 z-50">
                 <Apple1 />
               </div>
-              <div className="foundation text-center lg:text-left p-6 bg-white shadow-boxBlack flex flex-col">
+              <div className="foundation -mt-12 text-center lg:text-left p-6 bg-white shadow-boxBlack flex flex-col flex-1">
                 <hgroup className="mb-4">
                   <h2 className="text-title font-bold">Fluency</h2>
                 </hgroup>
@@ -54,11 +59,11 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div>
-              <div className="h-72 mb-6 md:mb-12 my-12 flex flex-row justify-center items-center lg:mt-0">
+            <div className="flex flex-col justify-center lg:justify-start mt-16 ">
+              <div className="h-72 mb-6 md:mb-12 flex flex-row justify-center items-center lg:mt-0 z-50">
                 <Apple2 />
               </div>
-              <div className="foundation text-center lg:text-left p-6 bg-white shadow-boxBlack flex flex-col">
+              <div className="foundation -mt-12 text-center lg:text-left p-6 bg-white shadow-boxBlack flex flex-col flex-1">
                 <hgroup className="mb-4">
                   <h2 className="text-title font-bold">Confidence</h2>
                 </hgroup>
@@ -68,11 +73,11 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div>
-              <div className="h-72 mb-6 md:mb-12 my-12 flex flex-row justify-center items-center lg:mt-0">
+            <div className="flex flex-col justify-center lg:justify-start mt-16 ">
+              <div className="h-72 mb-6 md:mb-12  flex flex-row justify-center items-center lg:mt-0 z-50">
                 <Apple3 />
               </div>
-              <div className="foundation text-center lg:text-left p-6 bg-white shadow-boxBlack flex flex-col">
+              <div className="foundation -mt-12 text-center lg:text-left p-6 bg-white shadow-boxBlack flex flex-col flex-1">
                 <hgroup className="mb-4">
                   <h2 className="text-title font-bold">Creativity</h2>
                 </hgroup>
@@ -85,14 +90,20 @@ export default function Home() {
           </div>
         </section>
         <section id="program" className="bg-green px-8 p-16 lg:px-32 lg:py-32">
-          <div className="flex flex-column justify-center">
+          <div className="hidden md:flex md:flex-column md:justify-center">
             <Title3 />
+          </div>
+          <div className="flex flex-column justify-center md:hidden">
+            <img
+              src="/mobiletitle4.png"
+              alt="Magpie's Cores Of Language Learning"
+            />
           </div>
           <div className="flex flex-row ">
             <div className="hidden lg:block">
               <Pencil1 />
             </div>
-            <ol className="weeks-list md:px-24 lg:p-0 lg:pl-16 w-full mt-0 lg:mt-24">
+            <ol className="mt-8 weeks-list md:px-24 lg:p-0 lg:pl-16 w-full mt-0 lg:mt-24">
               <Week
                 number="1"
                 title="Schedule for Success:"
@@ -136,10 +147,16 @@ export default function Home() {
           id="why-magpie"
           className="bg-red px-8 pt-16 pb-24 lg:px-32 lg:py-32"
         >
-          <div className="flex flex-column justify-center">
+          <div className="hidden md:flex md:flex-column md:justify-center">
             <Title4 />
           </div>
-          <div className="mt-16 grid grid-cols-1 md:px-32 lg:px-0 lg:gap-x-24 lg:grid-cols-3">
+          <div className="flex flex-column justify-center md:hidden">
+            <img
+              src="/mobiletitle2.png"
+              alt="Magpie's Cores Of Language Learning"
+            />
+          </div>
+          <div className="grid grid-cols-1 md:px-32 lg:px-0 lg:gap-x-24 lg:grid-cols-3">
             <Testimonial
               svg={<StudentStar1 />}
               subtitle=""
@@ -169,7 +186,7 @@ export default function Home() {
             <Title5 />
           </div>
           <div className="bg-white shadow-boxBlack lg:grid lg:grid-cols-3 gap-x-14 py-8 px-6 md:mx-32 lg:mx-0 lg:px-12 mt-8 md:mt-24">
-            <div>
+            <div className="flex flex-col justify-center">
               <img src="/dustin.png" alt="Teacher Dustin" />
             </div>
             <div className="lg:col-span-2 lg:grid lg:grid-cols-3">
@@ -178,7 +195,7 @@ export default function Home() {
                   Dustin Chok <br /> email@email.com <br /> +01234567891011
                 </p>
               </div>
-              <div className="hidden lg:block lg:col-span-2 lg:-mt-32">
+              <div className="hidden lg:block lg:col-span-2 lg:-mt-32 md:px-8 lg:px-0 xl:px-12">
                 <PencilAndApple />
               </div>
               <div className="lg:col-span-3 pt-6 text-bodymobile lg:text-body">
@@ -198,12 +215,18 @@ export default function Home() {
         </section>
         <section
           id="contact"
-          className="bg-white px-8 py-16 lg:px-32 lg:pt-16 lg:pb-32"
+          className="bg-grey md:bg-white px-8 py-16 lg:px-32 lg:pt-16 lg:pb-32"
         >
-          <div className="flex flex-column justify-center">
+          <div className="hidden md:flex md:flex-column md:justify-center">
             <Title6 />
           </div>
-          <div className="my-24 md:mx-32 lg:mx-0">
+          <div className="flex flex-column justify-center md:hidden">
+            <img
+              src="/mobiletitle3.png"
+              alt="Magpie's Cores Of Language Learning"
+            />
+          </div>
+          <div className="mt-8 mb-24 md:mx-32 lg:mx-0">
             <ContactForm />
           </div>
         </section>
