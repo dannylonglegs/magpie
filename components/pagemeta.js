@@ -9,7 +9,7 @@ const PageMeta = ({
   //   image = "socialpreview-01.png",
 }) => {
   const router = useRouter();
-  const canonicalUrl = `https://novosgrowthpartners.com${router.pathname}`;
+  const canonicalUrl = `https://magpieenglish.com${router.pathname}`;
   return (
     <Head>
       <title>{title}</title>
