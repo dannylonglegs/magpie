@@ -80,14 +80,14 @@ function Nav({}) {
           Contact
         </button>
       </Link>
-      <Link href="">
+      <a href="https://magpie-english.myshopify.com/">
         <button
           onClick={menuHandler}
           className="nav-button bg-white font-bold underline w-full h-full lg:h-20 border"
         >
           Enroll
         </button>
-      </Link>
+      </a>
     </>
   );
 
