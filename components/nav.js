@@ -101,7 +101,7 @@ function Nav({}) {
           " " +
           mobileClasses +
           " " +
-          "lg:bg-transparent lg:bg-opacity-0 lg:translate-x-0 lg:h-auto lg:w-auto lg:grid lg:grid-cols-7 lg:gap-x-6 lg:w-full lg:pb-8 lg:px-32 lg:fixed lg:left-0 lg:bottom-0 lg:z-100"
+          "lg:bg-transparent lg:bg-opacity-0 lg:translate-x-0 lg:h-auto lg:w-auto lg:grid lg:grid-cols-7 lg:gap-x-6 lg:w-full lg:pb-4 lg:px-32 lg:fixed lg:left-0 lg:bottom-0 lg:z-100"
         }
       >
         {links}

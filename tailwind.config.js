@@ -29,9 +29,9 @@ module.exports = {
     },
     fontSize: {
       bodymobile: "18px",
-      body: "24px",
-      title: "36px",
-      title2: "48px",
+      body: "20px",
+      title: "32px",
+      title2: "44px",
       titlemobile: "24px",
     },
   },
