@@ -26,7 +26,7 @@ const About = () => {
         <div className="lg:col-span-2 lg:grid lg:grid-cols-1">
           <div className="mt-auto">
             <p className="pt-6 lg:pt-0 text-body font-bold ">
-              Dustin Chok <br /> email@email.com <br /> +01234567891011
+              Dustin Chok <br /> Dustin@MagpieEnglish.com
             </p>
           </div>
           <div className="pt-6 text-bodymobile lg:text-body">
