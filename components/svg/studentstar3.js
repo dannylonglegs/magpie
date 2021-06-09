@@ -1,7 +1,7 @@
 const StudentStar3 = () => {
   return (
     <svg
-      className="h-auto w-full"
+      className="h-auto w-auto"
       viewBox="0 0 515 468"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
